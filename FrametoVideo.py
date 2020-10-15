@@ -37,8 +37,8 @@ def convert_frames_to_video(pathIn,pathOut,fps):
     out.release()
  
 def main():
-    pathIn= 'C:/PBCV/lf/'
-    pathOut = 'C:/PBCV/LFVideo1.avi'
+    pathIn= 'data/images/'
+    pathOut = 'data/video/HDR_video.avi'
     fps = 40.0
     convert_frames_to_video(pathIn, pathOut, fps)
  

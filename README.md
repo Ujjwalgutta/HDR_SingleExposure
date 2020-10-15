@@ -1,4 +1,6 @@
 # Deep HDR Video Reconstruction Using Single Exposure
+High dynamic range (HDR) can significantly improve the viewing experience. The objective is to predict values of saturated pixels given a Low Dynamic Range video (single exposure) produced by any type of camera/camcorder to produce an HDR video. As the amount of available HDR content is limited transfer-learning was utilized, where the
+weights were pre-trained on a large set of simulated HDR images.
 
 ## Motivation
 - Reconstruction of saturated image regions to recover lost information.
@@ -10,6 +12,7 @@ Realistic Camera Curve using sigmoid function.
 
 
 ## AutoEncoder Model Architecture
+The main advantage of Autoencoder architectures is that input is transformed into low latent representation on which all the data processing would be done and then the image can be reconstructed into the original shape.\
 The model is a Convolutional Neural Network in form of a Hybrid Dynamic Range Encoder. VGG-16 architecture without any fully connected layers is used. Skip-Connection layers from encoder to decoder at each level of resolution. 
 ![Alt Text](Images/AutoEncoder.PNG)
 

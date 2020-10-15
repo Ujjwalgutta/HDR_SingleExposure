@@ -6,7 +6,7 @@
 
 ## Data Augmentation
 Realistic Camera Curve using sigmoid function.
-
+![Alt Text](Images/DataAug.PNG)
 
 
 ## AutoEncoder Model Architecture
@@ -19,6 +19,10 @@ Prevents banding artifacts between predicted highlights and their surroundings. 
 
 ## Results
 ### Video
+
+Input LDR Video          |        Reconstructed HDR Video
+:-------------------------:|:-------------------------:
+![Alt Text](Videos/input_video.gif) | ![Alt Text](Videos/output_video.gif)
 
 ### Images
 
